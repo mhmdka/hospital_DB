@@ -10,7 +10,7 @@ class Registeration:
         self.email = ""
 
     def register(self):
-        #TODO
+
 
     def email(self):
         message = """Subject: Your username for login

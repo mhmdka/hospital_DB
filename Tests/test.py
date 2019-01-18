@@ -12,6 +12,7 @@ mydb = mysql.connector.Connect(host =config['host'], user=config['user'], passwd
 
 my_cursor = mydb.cursor()
 # my_cursor.execute(")
+print("what the fuck")
 
 id = 3
 my_cursor.execute("use test")

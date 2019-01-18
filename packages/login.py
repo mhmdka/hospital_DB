@@ -18,7 +18,7 @@ class Login:
         if user:
             hospital.execute("select Role_Name from user natural join user_role where user_Code = %s", (self.usercode,))
             role = hospital.fetchone()[0]
-            # TODO
+
             if role:
                 if role == "admin":
                 # go to admin page
