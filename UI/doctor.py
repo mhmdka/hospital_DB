@@ -1,6 +1,6 @@
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QMainWindow,QLineEdit,QPushButton,QTableWidget,QVBoxLayout,QListView,QLabel,QTableWidgetItem
-from PyQt5.QtGui import QStandardItem,QStandardItemModel
+from PyQt5.QtWidgets import QMainWindow, QLineEdit, QPushButton, QTableWidget, QVBoxLayout, QListView, QLabel, QTableWidgetItem
+from PyQt5.QtGui import QStandardItem, QStandardItemModel
 
 class doctor(QMainWindow):
      def __init__(self):
