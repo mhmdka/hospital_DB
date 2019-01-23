@@ -10,7 +10,7 @@ from UI.login import login
 from UI.DoctorListPage import DoctorListPage
 from UI.receptionist import Receptionist
 from UI.appointment import appointment
-
+from UI.pharmacist import pharmacist
 registerPage = None
 forgetPage = None
 nursePage = None
@@ -19,7 +19,7 @@ loginPage = None
 doctorlistPage = None
 receptionistPage = None
 appointmentPage = None
-
+pharmacistPage = None
 
 class Change:
     def __init__(self):
@@ -69,6 +69,13 @@ class Change:
             if receptionistPage == None:
                 receptionistPage = Receptionist()
             receptionistPage.receptionist_logic_page(change)
+
+        elif i == 14:
+            global pharmacistPage
+            if pharmacistPage == None:
+                pharmacistPage = pharmacist()
+            pharmacistPage.pharmacy_logic_page(change,change.usercode)
+
         elif i == 17:
             global doctorlistPage
             if doctorlistPage == None:

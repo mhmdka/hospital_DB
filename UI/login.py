@@ -68,7 +68,7 @@ class login(QMainWindow):
                     pass
                 # go to accountant page
                 elif role == "pharmacist":
-                    pass
+                    change.change_page(change, 14)
                 # go to pharmacist page
                 elif role == "lab_staff":
                     pass
