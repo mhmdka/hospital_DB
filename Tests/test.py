@@ -12,13 +12,16 @@ mydb = mysql.connector.Connect(host =config['host'], user=config['user'], passwd
 
 my_cursor = mydb.cursor()
 # my_cursor.execute(")
-
-id = 3
 my_cursor.execute("use Hospital_DB")
-try:
-    my_cursor.execute("insert into user(Username,user_password,Phone_Number,`E-Mail`,isVerified) values('ali',234567,252345,'afshinshah77@gmail.com',0)")
-except Exception as e:
-    print(e)
+my_cursor.execute("select date_appointment,time_appointment,Doctor_UserCode,Username,Patient_UserCode from appointment, user where appointment.Doctor_UserCode = user.User_Code;")
+doctors = my_cursor.fetchall()
+print(doctors)
+# id = 3
+# my_cursor.execute("use Hospital_DB")
+# try:
+#     my_cursor.execute("insert into user(Username,user_password,Phone_Number,`E-Mail`,isVerified) values('ali',234567,252345,'afshinshah77@gmail.com',0)")
+# except Exception as e:
+#     print(e)
 
 # my_cursor.execute("SELECT Role_Name FROM role where id=%s", (id,))
 mydb.commit()

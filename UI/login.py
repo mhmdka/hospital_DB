@@ -57,12 +57,12 @@ class login(QMainWindow):
                     pass
                 # go to patient page
                 elif role == "doctor":
-                    pass
+                    change.change_page(change, 6)
                 # go to doctor page
                 elif role == "nurse":
                     change.change_page(change, 4)
                 elif role == "receptionist":
-                    pass
+                    change.change_page(change, 10)
                 # go to receptionist page
                 elif role == "accountant":
                     pass

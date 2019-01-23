@@ -6,14 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>862</width>
-    <height>934</height>
+    <width>720</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>720</width>
     <height>640</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>720</width>
+    <height>800</height>
    </size>
   </property>
   <property name="baseSize">
@@ -48,225 +54,196 @@ background-color: #3a407f;
    </size>
   </property>
   <widget class="QWidget" name="MainWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>720</width>
+     <height>800</height>
+    </size>
+   </property>
    <property name="autoFillBackground">
     <bool>true</bool>
    </property>
-   <widget class="QStackedWidget" name="StackedWidget">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>-30</y>
-      <width>781</width>
-      <height>911</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="WelcomePage">
-     <widget class="QPushButton" name="WelcomePageButton">
-      <property name="geometry">
-       <rect>
-        <x>270</x>
-        <y>330</y>
-        <width>221</width>
-        <height>71</height>
-       </rect>
+   <layout class="QHBoxLayout" name="horizontalLayout_12">
+    <item>
+     <widget class="QStackedWidget" name="StackedWidget">
+      <property name="enabled">
+       <bool>true</bool>
       </property>
-      <property name="text">
-       <string>Welcome</string>
+      <property name="currentIndex">
+       <number>0</number>
       </property>
-     </widget>
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>270</x>
-        <y>480</y>
-        <width>201</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Soroush Hoseinpour</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_8">
-      <property name="geometry">
-       <rect>
-        <x>300</x>
-        <y>450</y>
-        <width>201</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Developeders:</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_9">
-      <property name="geometry">
-       <rect>
-        <x>250</x>
-        <y>510</y>
-        <width>231</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Afshin Shahrestani</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>230</x>
-        <y>540</y>
-        <width>181</width>
-        <height>16</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Mohammd Kahani</string>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="LoginPage">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <widget class="QWidget" name="verticalLayoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>10</y>
-        <width>481</width>
-        <height>641</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string/>
-      </property>
-      <layout class="QVBoxLayout" name="LoginPageLayout">
-       <property name="spacing">
-        <number>50</number>
+      <widget class="QWidget" name="WelcomePage">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QPushButton" name="WelcomePageButton">
+          <property name="text">
+           <string>Welcome</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Developeders:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Soroush Hoseinpour</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Afshin Shahrestani</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Mohammd Kahani</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="LoginPage">
+       <property name="enabled">
+        <bool>true</bool>
        </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <layout class="QVBoxLayout" name="LoginLabelLayout">
-         <property name="topMargin">
-          <number>0</number>
-         </property>
-         <property name="bottomMargin">
-          <number>0</number>
-         </property>
-         <item>
-          <widget class="QLabel" name="LoginPageLoginLabel">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>30</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:#1a237e;</string>
-           </property>
-           <property name="text">
-            <string>Login</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="Line" name="LoginPageLine">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="LoginPageUsernameLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>IBeamCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="LoginPageLayout">
+          <property name="spacing">
+           <number>50</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="LoginLabelLayout">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="LoginPageLoginLabel">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>30</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#1a237e;</string>
+              </property>
+              <property name="text">
+               <string>Login</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="LoginPageLine">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="LoginPageUsernameLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>IBeamCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
 border-radius:5;
 </string>
-         </property>
-         <property name="placeholderText">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="LoginPagePasswordLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;
+            </property>
+            <property name="placeholderText">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="LoginPagePasswordLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
 border-radius:5;
 </string>
-         </property>
-         <property name="placeholderText">
-          <string>Password</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="LoginRegisterLayout">
-         <item>
-          <widget class="QPushButton" name="LoginPageLoginButton">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>Password</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="LoginRegisterLayout">
+            <item>
+             <widget class="QPushButton" name="LoginPageLoginButton">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
 border-radius: 5px;
 background: #1a237e;
 padding: 20px; 
@@ -280,28 +257,28 @@ background-color: #3a407f;
 QPushButton:hover {
 background-color: #3a407f;
 }</string>
-           </property>
-           <property name="text">
-            <string>Login</string>
-           </property>
-           <property name="autoRepeat">
-            <bool>false</bool>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="LoginPageForgetButton">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+              </property>
+              <property name="text">
+               <string>Login</string>
+              </property>
+              <property name="autoRepeat">
+               <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="LoginPageForgetButton">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
 border-radius: 5px;
 background: #1a237e;
 padding: 20px; 
@@ -315,233 +292,233 @@ background-color: #3a407f;
 QPushButton:hover {
 background-color: #3a407f;
 }</string>
-           </property>
-           <property name="text">
-            <string>Forget</string>
-           </property>
-           <property name="flat">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QPushButton" name="LoginPageRegisterButton">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true"/>
-         </property>
-         <property name="text">
-          <string>Register</string>
-         </property>
-         <property name="flat">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="RegisterPage">
-     <widget class="QWidget" name="verticalLayoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>0</y>
-        <width>471</width>
-        <height>641</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="RegisterPageLayout">
-       <property name="spacing">
-        <number>30</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <layout class="QVBoxLayout" name="RegisterPageVerticalLayout">
-         <item>
-          <widget class="QLabel" name="RegisterPageTitleLabel">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>30</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color:#1a237e;</string>
-           </property>
-           <property name="text">
-            <string>Register</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="Line" name="RegisterPageLine">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="RegisterPageUsernameLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;
+              </property>
+              <property name="text">
+               <string>Forget</string>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="LoginPageRegisterButton">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Register</string>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="RegisterPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="RegisterPageLayout">
+          <property name="spacing">
+           <number>30</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="RegisterPageVerticalLayout">
+            <item>
+             <widget class="QLabel" name="RegisterPageTitleLabel">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>30</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:#1a237e;</string>
+              </property>
+              <property name="text">
+               <string>Register</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="RegisterPageLine">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="RegisterPageUsernameLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
 border-radius:5;
 </string>
-         </property>
-         <property name="placeholderText">
-          <string>Username</string>
-         </property>
-         <property name="clearButtonEnabled">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="RegisterPagePasswordLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;
+            </property>
+            <property name="placeholderText">
+             <string>Username</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="RegisterPagePasswordLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
 border-radius:5;
 </string>
-         </property>
-         <property name="placeholderText">
-          <string>Password</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="RegisterPageConfirmPasswordLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>Password</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="RegisterPageConfirmPasswordLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
 border-radius:5;
 </string>
-         </property>
-         <property name="placeholderText">
-          <string>Confirm Password</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="RegisterPageEmailLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>Confirm Password</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="RegisterPageEmailLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
 border-radius:5;
 </string>
-         </property>
-         <property name="placeholderText">
-          <string>Email Address</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="RegisterPagePhoneNumberLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;
+            </property>
+            <property name="placeholderText">
+             <string>Email Address</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="RegisterPagePhoneNumberLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
 border-radius:5;
 </string>
-         </property>
-         <property name="placeholderText">
-          <string>Phone Number</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QComboBox" name="RegisterPageComboBox">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>12</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QComboBox
+            </property>
+            <property name="placeholderText">
+             <string>Phone Number</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="RegisterPageComboBox">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QComboBox
 {
     subcontrol-origin: padding;
     subcontrol-position: top right;
@@ -565,64 +542,64 @@ QComboBox::drop-down
      padding-left: 10px;
      border-left-color: darkgray;
  }</string>
-         </property>
-         <property name="currentText">
-          <string/>
-         </property>
-         <item>
-          <property name="text">
-           <string/>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Patient</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Doctor</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Nurse</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>lab_staff</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Pharmacist</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Accountant</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Receptionist</string>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="RegisterPageHorizontalLayout">
-         <item>
-          <widget class="QPushButton" name="RegisterPageRegisterButton">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+            </property>
+            <property name="currentText">
+             <string/>
+            </property>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Patient</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Doctor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Nurse</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>LabStaff</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Pharmacist</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Accountant</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Receptionist</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="RegisterPageHorizontalLayout">
+            <item>
+             <widget class="QPushButton" name="RegisterPageRegisterButton">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
 border-radius: 5px;
 background: #1a237e;
 padding: 20px; 
@@ -636,22 +613,22 @@ background-color: #3a407f;
 QPushButton:hover {
 background-color: #3a407f;
 }</string>
-           </property>
-           <property name="text">
-            <string>Register</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="RegisterPageLoginButton">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
+              </property>
+              <property name="text">
+               <string>Register</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="RegisterPageLoginButton">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
 border-radius: 5px;
 background: #1a237e;
 padding: 20px; 
@@ -665,1743 +642,2071 @@ background-color: #3a407f;
 QPushButton:hover {
 background-color: #3a407f;
 }</string>
-           </property>
-           <property name="text">
-            <string>Login</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="ForgetPage">
-     <widget class="QWidget" name="verticalLayoutWidget_4">
-      <property name="geometry">
-       <rect>
-        <x>40</x>
-        <y>40</y>
-        <width>660</width>
-        <height>619</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="ForgetPageLayout">
-       <property name="spacing">
-        <number>50</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>100</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="ForgetPageLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>30</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:#1a237e;
+              </property>
+              <property name="text">
+               <string>Login</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ForgetPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_19">
+        <item>
+         <layout class="QVBoxLayout" name="ForgetPageLayout">
+          <property name="spacing">
+           <number>50</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>100</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="ForgetPageLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>30</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#1a237e;
 </string>
-         </property>
-         <property name="text">
-          <string>Forget</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="ForgetPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="ForgetPageLineEdit">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>50</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border:none;
+            </property>
+            <property name="text">
+             <string>Forget</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="ForgetPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="ForgetPageLineEdit">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
 border-radius:5;
 </string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="placeholderText">
-          <string>Email Address</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="ForgetPageDescriptionLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:#1a237e;</string>
-         </property>
-         <property name="text">
-          <string>A new password will be sent to your email address.</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="ForgetPageHorizontalLayout">
-         <item>
-          <widget class="QPushButton" name="ForgetPageLoginButton">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Login</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="ForgetPageSendButton">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Send</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="NursePage">
-     <widget class="QWidget" name="verticalLayoutWidget_3">
-      <property name="geometry">
-       <rect>
-        <x>120</x>
-        <y>30</y>
-        <width>511</width>
-        <height>841</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="NursePageLayout">
-       <property name="spacing">
-        <number>30</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="NursePageTitleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>30</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;</string>
-         </property>
-         <property name="text">
-          <string>Send Reports</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="NursePageLine1">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="NursePageUsername">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;</string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="NursePageRole">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;</string>
-         </property>
-         <property name="text">
-          <string>Nurse</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="NursePageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="NursePageResportsRecordButton">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Reports Record</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QFormLayout" name="NursePageFormLayout">
-         <property name="verticalSpacing">
-          <number>10</number>
-         </property>
-         <property name="leftMargin">
-          <number>15</number>
-         </property>
-         <property name="topMargin">
-          <number>10</number>
-         </property>
-         <property name="rightMargin">
-          <number>15</number>
-         </property>
-         <property name="bottomMargin">
-          <number>10</number>
-         </property>
-         <item row="0" column="0">
-          <widget class="QLabel" name="NursePagePatientNameLabel">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: #1a237e;</string>
-           </property>
-           <property name="text">
-            <string>Patinet Name</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="NursePageDateLabel">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: #1a237e;</string>
-           </property>
-           <property name="text">
-            <string>Date</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="NursePageDescriptionLabel">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: #1a237e;</string>
-           </property>
-           <property name="text">
-            <string>Decsription</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QTextEdit" name="NursePageTextEdit">
-           <property name="styleSheet">
-            <string notr="true">border:none;
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Email Address</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="ForgetPageDescriptionLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:#1a237e;</string>
+            </property>
+            <property name="text">
+             <string>A new password will be sent to your email address.</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="ForgetPageHorizontalLayout">
+            <item>
+             <widget class="QPushButton" name="ForgetPageLoginButton">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Login</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="ForgetPageSendButton">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Send</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="NursePage">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="NursePageLayout">
+          <property name="spacing">
+           <number>30</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="NursePageTitleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>30</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;</string>
+            </property>
+            <property name="text">
+             <string>Send Reports</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="NursePageLine1">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="NursePageUsername">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="NursePageRole">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;</string>
+            </property>
+            <property name="text">
+             <string>Nurse</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="NursePageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="NursePageResportsRecordButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Reports Record</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QFormLayout" name="NursePageFormLayout">
+            <property name="verticalSpacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>15</number>
+            </property>
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <property name="rightMargin">
+             <number>15</number>
+            </property>
+            <property name="bottomMargin">
+             <number>10</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="NursePagePatientNameLabel">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #1a237e;</string>
+              </property>
+              <property name="text">
+               <string>Patinet Name</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="NursePageDateLabel">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #1a237e;</string>
+              </property>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="NursePageDescriptionLabel">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #1a237e;</string>
+              </property>
+              <property name="text">
+               <string>Decsription</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QTextEdit" name="NursePageTextEdit">
+              <property name="styleSheet">
+               <string notr="true">border:none;
 border-radius:5;
 </string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="NursePagePatinetNameLineEdit">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border:none;
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="NursePagePatinetNameLineEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:none;
 border-radius:5;
 </string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QDateEdit" name="NursePageDateEdit"/>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="NursePagePatinetIDLabel">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: #1a237e;</string>
-           </property>
-           <property name="text">
-            <string>Patinet ID</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="NursePagePatinetIDLineEdit">
-           <property name="minimumSize">
-            <size>
-             <width>0</width>
-             <height>25</height>
-            </size>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border:none;
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QDateEdit" name="NursePageDateEdit"/>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="NursePagePatinetIDLabel">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #1a237e;</string>
+              </property>
+              <property name="text">
+               <string>Patinet ID</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLineEdit" name="NursePagePatinetIDLineEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:none;
 border-radius:5;
 </string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QPushButton" name="NursePageSubmitReportButton">
-         <property name="minimumSize">
-          <size>
-           <width>0</width>
-           <height>30</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Submit Report</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="RecordPageNurse">
-     <widget class="QWidget" name="verticalLayoutWidget_5">
-      <property name="geometry">
-       <rect>
-        <x>129</x>
-        <y>29</y>
-        <width>531</width>
-        <height>601</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="RecordPageLayout">
-       <property name="spacing">
-        <number>10</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="RecordPageTitleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>30</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Report Records</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="RecordPageUsernameLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="RecordPageUsernameLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="RecordPagePasswordLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Role</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="RecordsPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="RecordPageTableWidget">
-         <row>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>ID</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Name</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Date</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Desc</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="DoctorPage">
-     <widget class="QWidget" name="verticalLayoutWidget_7">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>20</y>
-        <width>571</width>
-        <height>831</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="DoctorLayout">
-       <property name="spacing">
-        <number>20</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="DoctorPageUsernameLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="DoctorPageRoleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Role</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="DoctorPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QHBoxLayout" name="DoctorPageHorizontalLayout">
-         <item>
-          <widget class="QPushButton" name="DoctorPageInboxButton">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Inbox</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="DoctorPageComposeButton">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>Compose</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="Line" name="DoctorPageLine2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="DoctorPageTableWidget"/>
-       </item>
-       <item>
-        <widget class="Line" name="DoctorPageLine3">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="DoctorPageAppointmentButton">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Appointments</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="DoctorComposePage">
-     <widget class="QWidget" name="verticalLayoutWidget_6">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>10</y>
-        <width>641</width>
-        <height>641</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="DoctorComposePageLayout">
-       <property name="spacing">
-        <number>10</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="DoctorComposePageRoleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Role</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="DoctorComposePageUsernameLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="DoctorComposePageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QFormLayout" name="DoctorComposePageFormLayout">
-         <property name="verticalSpacing">
-          <number>7</number>
-         </property>
-         <property name="leftMargin">
-          <number>10</number>
-         </property>
-         <property name="topMargin">
-          <number>5</number>
-         </property>
-         <property name="rightMargin">
-          <number>10</number>
-         </property>
-         <property name="bottomMargin">
-          <number>5</number>
-         </property>
-         <item row="0" column="0">
-          <widget class="QLabel" name="DoctorComposePageLabel">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: #1a237e;\n</string>
-           </property>
-           <property name="text">
-            <string>Title</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="DoctorComposePageLabel1">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: #1a237e;\n</string>
-           </property>
-           <property name="text">
-            <string>Date</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="DoctorComposePageLabel2">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: #1a237e;\n</string>
-           </property>
-           <property name="text">
-            <string>To</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="DoctorComposePageLabel3">
-           <property name="font">
-            <font>
-             <family>Rockwell</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: #1a237e;\n</string>
-           </property>
-           <property name="text">
-            <string>Description</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="DoctorComposePageTitleLineEdit">
-           <property name="styleSheet">
-            <string notr="true">border:none;
-border-radius:5;
-</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QDateEdit" name="DoctorComposePageDateEdit"/>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="DoctorComposePageToLineEdit">
-           <property name="styleSheet">
-            <string notr="true">border:none;
-border-radius:5;
-</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QTextEdit" name="DoctorComposePageDescriptionTextEdit"/>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QPushButton" name="DoctorComposePageSendButton">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Send</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="DoctorInboxPage">
-     <widget class="QWidget" name="verticalLayoutWidget_9">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>60</y>
-        <width>581</width>
-        <height>671</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="DoctorInboxPageLayout">
-       <property name="spacing">
-        <number>10</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="DoctorInboxPageUsernameLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="DoctorInboxPageRoleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Role</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="DoctorInboxPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="DoctorInboxPageTableWidget">
-         <property name="rowCount">
-          <number>0</number>
-         </property>
-         <property name="columnCount">
-          <number>5</number>
-         </property>
-         <column>
-          <property name="text">
-           <string>Date</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Time</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Patient Name</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Patient ID</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Content</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="DoctorAppointmentsPage">
-     <widget class="QWidget" name="verticalLayoutWidget_15">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>100</y>
-        <width>541</width>
-        <height>651</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="DoctorAppointmentsPageLayout">
-       <property name="spacing">
-        <number>10</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="DoctorAppointmentsPageUsernameLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="DoctorAppointmentsPageRoleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Doctor</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="DoctorAppointmentsPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="DoctorAppointmentsPageTableWidget">
-         <row>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>Start Time</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>New Column</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Date</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Patient ID</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Delete</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="ReceptionistPage">
-     <widget class="QWidget" name="verticalLayoutWidget_8">
-      <property name="geometry">
-       <rect>
-        <x>100</x>
-        <y>40</y>
-        <width>551</width>
-        <height>651</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="ReceptionistPageLayout">
-       <property name="spacing">
-        <number>10</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="ReceptionistPageUsernameLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="ReceptionistPageRoleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Receptionist</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="ReceptionistPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="ReceptionistPageDoctorsButton">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Doctors</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="ReceptionistPageTableWidget">
-         <property name="rowCount">
-          <number>3</number>
-         </property>
-         <property name="columnCount">
-          <number>3</number>
-         </property>
-         <row>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>2</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>3</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>Date</string>
-          </property>
-          <property name="font">
-           <font>
-            <family>Rockwell</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Start Time</string>
-          </property>
-          <property name="font">
-           <font>
-            <family>Rockwell</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Delete</string>
-          </property>
-          <property name="font">
-           <font>
-            <family>Rockwell</family>
-            <pointsize>10</pointsize>
-           </font>
-          </property>
-         </column>
-         <item row="0" column="0">
-          <property name="text">
-           <string>12/12</string>
-          </property>
-          <property name="flags">
-           <set>ItemIsSelectable|ItemIsEnabled</set>
-          </property>
-         </item>
-         <item row="0" column="1">
-          <property name="text">
-           <string>10</string>
-          </property>
-          <property name="flags">
-           <set>ItemIsSelectable|ItemIsEnabled</set>
-          </property>
-         </item>
-         <item row="0" column="2">
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="NursePageSubmitReportButton">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Submit Report</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="RecordPageNurse">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QPushButton" name="RecordPageNurseBackButton">
           <property name="text">
            <string/>
           </property>
           <property name="icon">
            <iconset>
-            <selectedoff>delete.png</selectedoff>
+            <selectedon>Back.png</selectedon>
            </iconset>
           </property>
-         </item>
-         <item row="1" column="0">
-          <property name="text">
-           <string>11/11</string>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="RecordPageLayout">
+          <property name="spacing">
+           <number>10</number>
           </property>
-         </item>
-         <item row="1" column="1">
-          <property name="text">
-           <string>9</string>
+          <property name="leftMargin">
+           <number>40</number>
           </property>
-         </item>
-         <item row="1" column="2">
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="RecordPageTitleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>30</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Report Records</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="RecordPageUsernameLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="RecordPageUsernameLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="RecordPagePasswordLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Role</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="RecordsPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>98</width>
+               <height>28</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="DoctorPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <layout class="QVBoxLayout" name="DoctorLayout">
+          <property name="spacing">
+           <number>20</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="DoctorPageUsernameLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="DoctorPageRoleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Role</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="DoctorPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="DoctorPageHorizontalLayout">
+            <item>
+             <widget class="QPushButton" name="DoctorPageInboxButton">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Inbox</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="DoctorPageComposeButton">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Compose</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Line" name="DoctorPageLine2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="DoctorPageTableWidget">
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Date</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Time</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Patient Id</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Patient Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Accept</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Delete</string>
+             </property>
+            </column>
+            <item row="0" column="4">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <selectedoff>Accept.png</selectedoff>
+              </iconset>
+             </property>
+            </item>
+            <item row="0" column="5">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <selectedoff>Delete.png</selectedoff>
+              </iconset>
+             </property>
+            </item>
+            <item row="1" column="0">
+             <property name="text">
+              <string>1/1/98</string>
+             </property>
+            </item>
+            <item row="1" column="1">
+             <property name="text">
+              <string>20</string>
+             </property>
+            </item>
+            <item row="1" column="2">
+             <property name="text">
+              <string>18</string>
+             </property>
+            </item>
+            <item row="1" column="3">
+             <property name="text">
+              <string>ashin</string>
+             </property>
+            </item>
+            <item row="1" column="4">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="DoctorPageLine3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="DoctorPageAppointmentButton">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Appointments</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="DoctorComposePage">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QPushButton" name="DoctorComposePageBackButton">
           <property name="text">
            <string/>
           </property>
           <property name="icon">
            <iconset>
-            <activeoff>delete.png</activeoff>
+            <selectedon>Back.png</selectedon>
            </iconset>
           </property>
-         </item>
-         <item row="2" column="0">
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="DoctorComposePageLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="DoctorComposePageRoleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Role</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="DoctorComposePageUsernameLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="DoctorComposePageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QFormLayout" name="DoctorComposePageFormLayout">
+            <property name="verticalSpacing">
+             <number>7</number>
+            </property>
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>5</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="DoctorComposePageLabel">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #1a237e;\n</string>
+              </property>
+              <property name="text">
+               <string>Title</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="DoctorComposePageLabel1">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #1a237e;\n</string>
+              </property>
+              <property name="text">
+               <string>Date</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="DoctorComposePageLabel2">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #1a237e;\n</string>
+              </property>
+              <property name="text">
+               <string>To</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="DoctorComposePageLabel3">
+              <property name="font">
+               <font>
+                <family>Rockwell</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: #1a237e;\n</string>
+              </property>
+              <property name="text">
+               <string>Description</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="DoctorComposePageTitleLineEdit">
+              <property name="styleSheet">
+               <string notr="true">border:none;
+border-radius:5;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDateEdit" name="DoctorComposePageDateEdit"/>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLineEdit" name="DoctorComposePageToLineEdit">
+              <property name="styleSheet">
+               <string notr="true">border:none;
+border-radius:5;
+</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QTextEdit" name="DoctorComposePageDescriptionTextEdit"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="DoctorComposePageSendButton">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Send</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="DoctorInboxPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QPushButton" name="DoctorInboxPageBackButton">
           <property name="text">
            <string/>
           </property>
-         </item>
-         <item row="2" column="1">
+          <property name="icon">
+           <iconset>
+            <selectedon>Back.png</selectedon>
+           </iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="DoctorInboxPageLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="DoctorInboxPageUsernameLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="DoctorInboxPageRoleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Role</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="DoctorInboxPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="DoctorInboxPageScrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>98</width>
+               <height>28</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="DoctorAppointmentsPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QPushButton" name="DoctorAppointmentsPageBackButton">
           <property name="text">
            <string/>
           </property>
-         </item>
-         <item row="2" column="2">
-          <property name="flags">
-           <set>ItemIsSelectable</set>
+          <property name="icon">
+           <iconset>
+            <selectedon>Back.png</selectedon>
+           </iconset>
           </property>
-         </item>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="ReceptionistPageAddButton">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Add</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="LabStaffPage">
-     <widget class="QWidget" name="verticalLayoutWidget_10">
-      <property name="geometry">
-       <rect>
-        <x>-20</x>
-        <y>30</y>
-        <width>581</width>
-        <height>621</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="LabStaffPageLayout">
-       <property name="spacing">
-        <number>10</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="LabStaffPageUsernameLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="DoctorAppointmentsPageLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="DoctorAppointmentsPageUsernameLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
 </string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="LabStaffPageRoleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="DoctorAppointmentsPageRoleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
 </string>
-         </property>
-         <property name="text">
-          <string>Lab Staff</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="LabStaffPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="LabStaffPageTableWidget">
-         <property name="styleSheet">
-          <string notr="true"> QTableWidget {
+            </property>
+            <property name="text">
+             <string>Doctor</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="DoctorAppointmentsPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="DoctorAppointmentsPageTableWidget">
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>60</number>
+            </attribute>
+            <attribute name="verticalHeaderMinimumSectionSize">
+             <number>60</number>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Date</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Time</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Patient ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Patient Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Delete</string>
+             </property>
+            </column>
+            <item row="0" column="1">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="flags">
+              <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+             </property>
+            </item>
+            <item row="0" column="4">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <selectedoff>Delete.png</selectedoff>
+              </iconset>
+             </property>
+             <property name="flags">
+              <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ReceptionistPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <layout class="QVBoxLayout" name="ReceptionistPageLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="ReceptionistPageUsernameLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="ReceptionistPageRoleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Receptionist</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="ReceptionistPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ReceptionistPageDoctorsButton">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Doctors</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="ReceptionistPageLine2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="ReceptionistPageSearchLineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+border-radius:5;
+</string>
+            </property>
+            <property name="placeholderText">
+             <string>Doctor Id</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ReceptionistPageFilterButton">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Filter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="ReceptionistPageTableWidget">
+            <property name="rowCount">
+             <number>1</number>
+            </property>
+            <property name="columnCount">
+             <number>5</number>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Date</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Rockwell</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Start Time</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Rockwell</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Doctor id</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Rockwell</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Doctor Name</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Rockwell</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Patient Id</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Rockwell</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ReceptionistPageAddButton">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="LabStaffPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <layout class="QVBoxLayout" name="LabStaffPageLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="LabStaffPageUsernameLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="LabStaffPageRoleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Lab Staff</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="LabStaffPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="LabStaffPageTableWidget">
+            <property name="styleSheet">
+             <string notr="true"> QTableWidget {
          selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
                                      stop: 0 #FF92BB, stop: 1 white);
      }</string>
-         </property>
-         <row>
-          <property name="text">
-           <string>1</string>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Examination Date</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Patient ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Tester</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Given Date</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Taken Date</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Reslut</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Delete</string>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="0" column="5">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="toolTip">
+              <string comment="dzv" extracomment="ddd"/>
+             </property>
+            </item>
+            <item row="0" column="6">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="flags">
+              <set>ItemIsUserCheckable</set>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="LabStaffPageAddButton">
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="AccountantPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <layout class="QVBoxLayout" name="AccountantPageLayout">
+          <property name="spacing">
+           <number>10</number>
           </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>Examination Date</string>
+          <property name="leftMargin">
+           <number>40</number>
           </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Patient ID</string>
+          <property name="topMargin">
+           <number>30</number>
           </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Tester</string>
+          <property name="rightMargin">
+           <number>40</number>
           </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Taken Date</string>
+          <property name="bottomMargin">
+           <number>30</number>
           </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Given Date</string>
+          <item>
+           <widget class="QLabel" name="AccountantPageUsernameLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="AccountantPageRoleLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Lab Staff</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="AccountantPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="AccountantPageTableWidget">
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Amount</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Date</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Kind</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Delete</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="AccountantPageAddButton">
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="PatientPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <layout class="QVBoxLayout" name="PatientPageLayout">
+          <item>
+           <layout class="QHBoxLayout" name="PatientPageHorizontalLayout">
+            <item>
+             <widget class="QTableWidget" name="PatientPageExaminationTableWidget">
+              <column>
+               <property name="text">
+                <string>Date(taken)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Date(given)</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Desc</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="PatientPagePrescriptionTableWidget">
+              <column>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="Line" name="PatientPageLine">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="PatientPageVerticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="PatientPageHorizontalLayout2">
+              <item>
+               <widget class="QLabel" name="PatientPageLabel">
+                <property name="text">
+                 <string>Room Number</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="PatientPageRoomNumberLabel">
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="PatientPageHorizontalLayout3">
+              <item>
+               <widget class="QLabel" name="PatientPageLabel2">
+                <property name="text">
+                 <string>Room Floor</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="PatientPageRoomFloorLabel">
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="PatientPageHorizontalLayout4">
+              <item>
+               <widget class="QLabel" name="PatientPageBedNumberLabel">
+                <property name="text">
+                 <string>Bed Number</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="PatientPageLabel3">
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="PharmacistPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <layout class="QVBoxLayout" name="PharmacistPageLayout">
+          <property name="spacing">
+           <number>10</number>
           </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Reslut</string>
+          <property name="leftMargin">
+           <number>40</number>
           </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Delete</string>
+          <property name="topMargin">
+           <number>30</number>
           </property>
-         </column>
-         <item row="0" column="0">
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="PharmacistPageSearchLabel">
+            <property name="font">
+             <font>
+              <family>Rockwell</family>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #1a237e;
+</string>
+            </property>
+            <property name="text">
+             <string>Search</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="PharmacistPageLineEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="PharmacistPageSubmitButton">
+            <property name="text">
+             <string>Submit</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="PharmacistPageTableWidget">
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Drog Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Expire Date</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Cost</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Delete</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="PharmacistPageAddButton">
+            <property name="text">
+             <string>Add</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="AdminPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="EditProfilePage">
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>40</number>
+          </property>
+          <property name="topMargin">
+           <number>30</number>
+          </property>
+          <property name="rightMargin">
+           <number>40</number>
+          </property>
+          <property name="bottomMargin">
+           <number>30</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <property name="spacing">
+               <number>50</number>
+              </property>
+              <property name="leftMargin">
+               <number>40</number>
+              </property>
+              <property name="topMargin">
+               <number>10</number>
+              </property>
+              <property name="rightMargin">
+               <number>40</number>
+              </property>
+              <property name="bottomMargin">
+               <number>10</number>
+              </property>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageUsernameLineEdit">
+                <property name="placeholderText">
+                 <string>Username</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePagePasswordLineEdit">
+                <property name="placeholderText">
+                 <string>Password</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageConfirmPasswordLineEdit">
+                <property name="placeholderText">
+                 <string>Confirm Password</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageYOBLineEdit">
+                <property name="placeholderText">
+                 <string>Year of Birth</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageHeightLineEdit">
+                <property name="placeholderText">
+                 <string>Height</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageWeightLineEdit">
+                <property name="placeholderText">
+                 <string>Weight</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_5">
+              <property name="spacing">
+               <number>50</number>
+              </property>
+              <property name="leftMargin">
+               <number>40</number>
+              </property>
+              <property name="topMargin">
+               <number>10</number>
+              </property>
+              <property name="rightMargin">
+               <number>40</number>
+              </property>
+              <property name="bottomMargin">
+               <number>10</number>
+              </property>
+              <item>
+               <widget class="QComboBox" name="EditProfilePageGenderComboBox">
+                <item>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Male</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Female</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageAddressLineEdit">
+                <property name="placeholderText">
+                 <string>Address</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageZipcodeLineEdit">
+                <property name="placeholderText">
+                 <string>Zip-Code</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageAgeLineEdit">
+                <property name="placeholderText">
+                 <string>Age</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePagePhoneLineEdit">
+                <property name="placeholderText">
+                 <string>Phone</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="EditProfilePageEmailLineEdit">
+                <property name="placeholderText">
+                 <string>Email</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="DoctorsListPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QPushButton" name="DoctorsListPageBackButton">
           <property name="text">
            <string/>
           </property>
-         </item>
-         <item row="0" column="5">
-          <property name="text">
-           <string/>
+          <property name="icon">
+           <iconset>
+            <selectedon>Back.png</selectedon>
+           </iconset>
           </property>
-          <property name="toolTip">
-           <string comment="dzv" extracomment="ddd"/>
-          </property>
-         </item>
-         <item row="0" column="6">
-          <property name="text">
-           <string/>
-          </property>
-         </item>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="LabStaffPageAddButton">
-         <property name="text">
-          <string>Add</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="DoctorsListPageLayout">
+          <item>
+           <widget class="QTableWidget" name="DoctorsListPageTableWidget">
+            <column>
+             <property name="text">
+              <string>Doctor id</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Doctor Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Phone Number</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Email</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
      </widget>
-    </widget>
-    <widget class="QWidget" name="AccountantPage">
-     <widget class="QWidget" name="verticalLayoutWidget_11">
-      <property name="geometry">
-       <rect>
-        <x>30</x>
-        <y>90</y>
-        <width>571</width>
-        <height>671</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="AccountantPageLayout">
-       <property name="spacing">
-        <number>10</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="AccountantPageUsernameLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Username</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="AccountantPageRoleLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Lab Staff</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="AccountantPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="AccountantPageTableWidget">
-         <row>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>Amount</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Date</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Kind</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Delete</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="AccountantPageAddButton">
-         <property name="text">
-          <string>Add</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="PatientPage">
-     <widget class="QWidget" name="verticalLayoutWidget_12">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>50</y>
-        <width>581</width>
-        <height>721</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="PatientPageLayout">
-       <item>
-        <layout class="QHBoxLayout" name="PatientPageHorizontalLayout">
-         <item>
-          <widget class="QTableWidget" name="PatientPageExaminationTableWidget">
-           <column>
-            <property name="text">
-             <string>Date(taken)</string>
-            </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>Date(given)</string>
-            </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>Desc</string>
-            </property>
-           </column>
-          </widget>
-         </item>
-         <item>
-          <widget class="QTableWidget" name="PatientPagePrescriptionTableWidget">
-           <column>
-            <property name="text">
-             <string>1</string>
-            </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>2</string>
-            </property>
-           </column>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="Line" name="PatientPageLine">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="PatientPageVerticalLayout">
-         <item>
-          <layout class="QHBoxLayout" name="PatientPageHorizontalLayout2">
-           <item>
-            <widget class="QLabel" name="PatientPageLabel">
-             <property name="text">
-              <string>Room Number</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="PatientPageRoomNumberLabel">
-             <property name="text">
-              <string>TextLabel</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="PatientPageHorizontalLayout3">
-           <item>
-            <widget class="QLabel" name="PatientPageLabel2">
-             <property name="text">
-              <string>Room Floor</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="PatientPageRoomFloorLabel">
-             <property name="text">
-              <string>TextLabel</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="PatientPageHorizontalLayout4">
-           <item>
-            <widget class="QLabel" name="PatientPageBedNumberLabel">
-             <property name="text">
-              <string>Bed Number</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="PatientPageLabel3">
-             <property name="text">
-              <string>TextLabel</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="PharmacistPage">
-     <widget class="QWidget" name="verticalLayoutWidget_14">
-      <property name="geometry">
-       <rect>
-        <x>70</x>
-        <y>50</y>
-        <width>581</width>
-        <height>681</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="PharmacistPageLayout">
-       <property name="spacing">
-        <number>10</number>
-       </property>
-       <property name="leftMargin">
-        <number>40</number>
-       </property>
-       <property name="topMargin">
-        <number>30</number>
-       </property>
-       <property name="rightMargin">
-        <number>40</number>
-       </property>
-       <property name="bottomMargin">
-        <number>30</number>
-       </property>
-       <item>
-        <widget class="QLabel" name="PharmacistPageSearchLabel">
-         <property name="font">
-          <font>
-           <family>Rockwell</family>
-           <pointsize>15</pointsize>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: #1a237e;
-</string>
-         </property>
-         <property name="text">
-          <string>Search</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="PharmacistPageLineEdit"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="PharmacistPageSubmitButton">
-         <property name="text">
-          <string>Submit</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="line_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QTableWidget" name="PharmacistPageTableWidget">
-         <row>
-          <property name="text">
-           <string>1</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>Drog Name</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Expire Date</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Cost</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Delete</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="PharmacistPageAddButton">
-         <property name="text">
-          <string>Add</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-   </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menubar">
@@ -2409,7 +2714,7 @@ border-radius:5;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>862</width>
+     <width>720</width>
      <height>25</height>
     </rect>
    </property>

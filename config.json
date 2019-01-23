@@ -1,6 +1,6 @@
 {
   "host": "localhost",
-  "user": "username",
-  "passwd": "your_password",
+  "user": "phpmyadmin",
+  "passwd": "11kahani",
   "database": "Hospital_DB"
 }

@@ -51,7 +51,7 @@ class register(QMainWindow):
         phone_text_edit = change.main_window.findChild(QLineEdit, "RegisterPagePhoneNumberLineEdit")
 
         items = change.main_window.findChildren(QLineEdit)
-        combo = change.main_window.findChild(QComboBox)
+        combo = change.main_window.findChild(QComboBox, "RegisterPageComboBox")
 
         flag = True
         for item in items:

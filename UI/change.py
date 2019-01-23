@@ -7,13 +7,18 @@ from UI.nurse import nurse
 from UI.forget import forget
 from UI.register import register
 from UI.login import login
-
+from UI.DoctorListPage import DoctorListPage
+from UI.receptionist import Receptionist
+from UI.appointment import appointment
 
 registerPage = None
 forgetPage = None
 nursePage = None
 doctorPage = None
 loginPage = None
+doctorlistPage = None
+receptionistPage = None
+appointmentPage = None
 
 
 class Change:
@@ -40,9 +45,32 @@ class Change:
             global forgetPage
             if forgetPage == None:
                 forgetPage = forget()
-            forgetPage.forget_page_logic(change, change.usercode)
+            forgetPage.forget_page_logic(change)
         elif i == 4:
             global nursePage
             if nursePage == None:
                 nursePage = nurse()
             nursePage.send_nurse_report_logic_page(change, change.usercode)
+
+        elif i == 6:
+            global doctorPage
+            if doctorPage == None:
+                doctorPage = doctor()
+            doctorPage.doctor_page_logic(change, change.usercode)
+
+        elif i == 9:
+            global appointmentPage
+            if appointmentPage == None:
+                appointmentPage = appointment()
+            appointmentPage.appointment_logic_page(change, change.usercode)
+
+        elif i == 10:
+            global receptionistPage
+            if receptionistPage == None:
+                receptionistPage = Receptionist()
+            receptionistPage.receptionist_logic_page(change)
+        elif i == 17:
+            global doctorlistPage
+            if doctorlistPage == None:
+                doctorlistPage = DoctorListPage()
+            doctorlistPage.doctorlist_page_logic(change)
